@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#2a78d6"/>
+  <rect x="112" y="300" width="64" height="108" rx="14" fill="#ffffff" opacity="0.7"/>
+  <rect x="224" y="220" width="64" height="188" rx="14" fill="#ffffff" opacity="0.85"/>
+  <rect x="336" y="140" width="64" height="268" rx="14" fill="#ffffff"/>
+  <circle cx="144" cy="168" r="44" fill="#eda100"/>
+  <text x="144" y="186" font-family="Arial, sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle">zł</text>
+</svg>

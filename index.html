@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Moje finanse</title>
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Finanse">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="nav-month" id="prevMonth" aria-label="Poprzedni miesiąc">‹</button>
+    <h1 id="monthTitle">—</h1>
+    <button class="nav-month" id="nextMonth" aria-label="Następny miesiąc">›</button>
+  </header>
+
+  <main id="view"></main>
+
+  <button class="fab" id="addExpense" aria-label="Dodaj wydatek">+</button>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="month" class="active"><span>📅</span>Miesiąc</button>
+    <button data-tab="expenses"><span>🧾</span>Wydatki</button>
+    <button data-tab="charts"><span>📊</span>Wykresy</button>
+    <button data-tab="goal"><span>🎯</span>Cel</button>
+    <button data-tab="settings"><span>⚙️</span>Ustawienia</button>
+  </nav>
+
+  <dialog id="dialog">
+    <form method="dialog" id="dialogForm"></form>
+  </dialog>
+
+  <div class="tooltip" id="tooltip" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
